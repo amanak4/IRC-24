@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { BookOpenIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom';
-
+import logo from '../assets/collegelogo.jpg'
+import logo2 from '../assets/logo3.png'
 const Header = () => {
     let Links =[
         {name:"Home",link:"/"},
@@ -13,12 +14,11 @@ const Header = () => {
       let [open, setOpen] =useState(false);
 
     return (
-        <div className='shadow-md w-full fixed top-0 left-0 '>
-           <div className='md:flex items-center justify-between bg-blue-600 py-4 md:px-10 px-7'>
+        <div className='shadow-md w-full fixed top-0 left-0 z-10'>
+           <div className='md:flex items-center justify-between bg-[#8f1402] py-4 md:px-10 px-7'>
             {/* logo section */}
             <a href='/' className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-               <BookOpenIcon className='w-7 h-7 text-black'/>
-               <span>IRC</span>
+               <img src={logo2} className=' h-[60px] bg-repeat'/>
             </a>
             {/* Menu icon */}
 
@@ -28,7 +28,7 @@ const Header = () => {
                 }
             </div>
             {/* linke items */}
-            <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:bg-blue-600 md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-12' : 'top-[-490px]'}`}>
+            <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:bg-[#8f1402] bg-[#93210ffd] md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-12' : 'top-[-490px]'}`}>
                 {
                     Links.map((link) => (
                     <li className='md:ml-8 md:my-0 my-7 font-semibold'>
