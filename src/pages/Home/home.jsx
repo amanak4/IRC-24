@@ -35,7 +35,6 @@ const Home = () => {
 
   const headingStyle = {
     fontSize: '1.5rem',
-    fontWeight: '500',
     marginTop: '1rem',
     fontFamily: "Ubuntu",
   fontWeight: 'semi-bold',
