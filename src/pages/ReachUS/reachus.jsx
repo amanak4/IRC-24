@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import CampusMap from '../../assets/campus_map.jpg';
 
 function Reach() {
   return (
-    <div>
-      Reach US
+    <div className="flex justify-center items-center w-full h-full">
+      <img src={CampusMap} alt="Campus Map" className="max-w-full max-h-full" />
     </div>
-  )
+  );
 }
 
 export default Reach;

@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     let Links =[
-        {name:"HOME",link:"/"},
-        {name:"INTER COMMUNITY",link:"/international-community"},
-        {name:"ABOUT",link:"/about"},
-        {name:"REACH US",link:"/reach-us"},
-        {name:"ATTENDUS",link:"/attendus"},
+        {name:"Home",link:"/"},
+        {name:"International Community",link:"/international-community"},
+        {name:"About",link:"/about"},
+        {name:"Reach Us",link:"/reach-us"},
+        {name:"Attendees",link:"/attendees"},
       ];
       let [open, setOpen] =useState(false);
 
@@ -28,7 +28,7 @@ const Header = () => {
                 }
             </div>
             {/* linke items */}
-            <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static sm:bg-blue-500 md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-12' : 'top-[-490px]'}`}>
+            <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:bg-blue-600 md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-12' : 'top-[-490px]'}`}>
                 {
                     Links.map((link) => (
                     <li className='md:ml-8 md:my-0 my-7 font-semibold'>
