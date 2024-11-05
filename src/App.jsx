@@ -8,7 +8,7 @@ import Home from './pages/Home/home'
 import About from './pages/About/About'
 import InterCommunity from './pages/InternationalCommunity/InterCommunity'
 import Reach from './pages/ReachUS/reachus'
-import Attendus from './pages/Attendus/Attendus'
+import Attendees from './pages/Attendees/Attendees'
 import NotFound from './pages/NotFound/NotFound'
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +22,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/international-community' element={<InterCommunity />} />
           <Route path='/reach-us' element={<Reach />} />
-          <Route path='/attendus' element={<Attendus />} />
+          <Route path='/attendees' element={<Attendees />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>

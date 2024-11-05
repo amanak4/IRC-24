@@ -5,11 +5,11 @@ import logo from '../assets/collegelogo.jpg'
 import logo2 from '../assets/logo3.png'
 const Header = () => {
     let Links =[
-        {name:"HOME",link:"/"},
-        {name:"INTER COMMUNITY",link:"/international-community"},
-        {name:"ABOUT",link:"/about"},
-        {name:"REACH US",link:"/reach-us"},
-        {name:"ATTENDEES",link:"/attendees"},
+        {name:"Home",link:"/"},
+        {name:"International Community",link:"/international-community"},
+        {name:"About",link:"/about"},
+        {name:"Reach Us",link:"/reach-us"},
+        {name:"Attendees",link:"/attendees"},
       ];
       let [open, setOpen] =useState(false);
 
